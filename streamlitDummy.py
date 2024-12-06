@@ -20,5 +20,5 @@ bar = st.progress(0)
 
 for idx, data in enumerate(dummyData["sliced"]):
     bar.progress(100 // (len(dummyData["sliced"]) - idx))
-    st.text(f"Page {idx}")
+    st.markdown(f"**Page {idx}**")
     st.markdown(data)
